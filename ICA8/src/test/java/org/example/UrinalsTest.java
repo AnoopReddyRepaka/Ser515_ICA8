@@ -25,4 +25,10 @@ class UrinalsTest {
 
         assertFalse(urinals.readInput("00000000000000000000000"));
     }
+    @Test
+    void readIn_InvalidCharacter(){
+        Urinals urinals=new Urinals();
+
+        assertFalse(urinals.readInput("a0000"));
+    }
 }
