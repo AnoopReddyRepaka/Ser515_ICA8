@@ -4,7 +4,7 @@ public class Urinals {
     public boolean readInput(String input)
     {
         System.out.println("Not  implemented");
-       return true;
+       return false;
 
 
     }
