@@ -49,7 +49,7 @@ class UrinalsTest {
     void ValidSpotsSecond()
     {
         Urinals urinals= new Urinals();
-        assertEquals(1,urinals.validSpots("00101"));
+        assertEquals(0,urinals.validSpots("10101"));
     }
     @Test
     void ValidSpotsThird()
