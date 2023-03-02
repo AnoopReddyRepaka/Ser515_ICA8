@@ -63,4 +63,11 @@ class UrinalsTest {
         Urinals urinals= new Urinals();
         assertTrue(urinals.readInFile("src/main/resources/urinal.dat"));
     }
+    @Test
+    void FilenotFound()
+    {
+        Urinals urinals= new Urinals();
+        String filename="src/main/resources/urinals.dat";
+        assertFalse(urinals.readInFile(filename));
+    }
 }
