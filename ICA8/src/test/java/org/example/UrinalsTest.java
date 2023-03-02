@@ -83,7 +83,7 @@ class UrinalsTest {
 
 
         public void readIoexception() throws IOException {
-            String filename = "src/main/resources/urinal3.dat";
+            String filename = "src/main/resources/urinal.dat";
             BufferedReader reader = new BufferedReader(new FileReader(filename));
             String line = reader.readLine();
             while (line != null) {
