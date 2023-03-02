@@ -97,12 +97,7 @@ class UrinalsTest {
     {
         Urinals urinals= new Urinals();
         assertTrue(urinals.readInFile("src/main/resources/urinal.dat"));
-
-
-        // create a File object representing a file that does not exist
         File nonExistingFile = new File("output/rule.txt");
-
-        // test that the file does not exist
         assertTrue(nonExistingFile.exists());
 
     }
