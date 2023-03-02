@@ -19,4 +19,10 @@ class UrinalsTest {
 
         assertFalse(urinals.readInput(""));
     }
+    @Test
+    void readIn_tooLong() {
+        Urinals urinals=new Urinals();
+
+        assertFalse(urinals.readInput("00000000000000000000000"));
+    }
 }
