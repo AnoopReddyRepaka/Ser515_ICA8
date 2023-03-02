@@ -51,4 +51,10 @@ class UrinalsTest {
         Urinals urinals= new Urinals();
         assertEquals(1,urinals.validSpots("00101"));
     }
+    @Test
+    void ValidSpotsThird()
+    {
+        Urinals urinals= new Urinals();
+        assertEquals(1,urinals.validSpots("101000"));
+    }
 }
