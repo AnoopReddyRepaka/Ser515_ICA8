@@ -70,4 +70,11 @@ class UrinalsTest {
         String filename="src/main/resources/urinals.dat";
         assertFalse(urinals.readInFile(filename));
     }
+    @Test
+    void emptyFile()
+    {
+        Urinals urinals= new Urinals();
+        String filename="";
+        assertFalse(urinals.readInFile(filename));
+    }
 }
