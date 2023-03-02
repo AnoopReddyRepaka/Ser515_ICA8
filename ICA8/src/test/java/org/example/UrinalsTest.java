@@ -61,6 +61,6 @@ class UrinalsTest {
     void ReadinFileTest()
     {
         Urinals urinals= new Urinals();
-        assertTrue(urinals.readInFile("Urinals.dat"));
+        assertTrue(urinals.readInFile("src/main/resources/urinal.dat"));
     }
 }
