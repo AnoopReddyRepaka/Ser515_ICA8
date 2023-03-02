@@ -1,6 +1,7 @@
 package org.example;
 
 import org.junit.jupiter.api.Test;
+import java.io.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -76,5 +77,19 @@ class UrinalsTest {
         Urinals urinals= new Urinals();
         String filename="";
         assertFalse(urinals.readInFile(filename));
+    }
+    @Test
+
+
+
+        public void readIoexception() throws IOException {
+            String filename = "src/main/resources/urinal3.dat";
+            BufferedReader reader = new BufferedReader(new FileReader(filename));
+            String line = reader.readLine();
+            while (line != null) {
+                // do something with the line
+                line = reader.readLine();
+            }
+            reader.close();
     }
 }
