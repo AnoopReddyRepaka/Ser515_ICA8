@@ -57,4 +57,10 @@ class UrinalsTest {
         Urinals urinals= new Urinals();
         assertEquals(1,urinals.validSpots("101000"));
     }
+    @Test
+    void ReadinFileTest()
+    {
+        Urinals urinals= new Urinals();
+        assertTrue(urinals.readInFile("Urinals.dat"));
+    }
 }
