@@ -29,7 +29,7 @@ class UrinalsTest {
         assertFalse(urinals.readInput("00000000000000000000000"));
     }
     @Test
-    void readIn_InvalidCharacter(){
+    void readIn_InvalidCharacters(){
         Urinals urinals=new Urinals();
 
         assertFalse(urinals.readInput("a0000"));
@@ -101,6 +101,24 @@ class UrinalsTest {
         assertTrue(nonExistingFile.exists());
 
     }
+    @Test
+    public void testIOExceptionWhileWritingOutput() {
+        String fileName = "text.txt";
+        String content = "Hello, world!";
+        File outputFile = new File(fileName);
 
+        try {
+            FileWriter fileWriter = new FileWriter(outputFile);
+            fileWriter.write(content);
+            fileWriter.close();
+        } catch (IOException ex) {
+            assertTrue(ex instanceof IOException);
+            assertTrue(ex.getMessage().contains("Could not write output file"));
+            return;
+        }
+
+        assertTrue(outputFile.exists());
+        outputFile.delete();
+    }
 
 }
