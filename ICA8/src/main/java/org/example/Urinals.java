@@ -5,6 +5,8 @@ public class Urinals {
     public boolean readInput(String input)
     {
        urinals=input;
+       if(input=="") return false;
+
        return true;
     }
 }
