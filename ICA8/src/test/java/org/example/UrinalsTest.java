@@ -10,6 +10,6 @@ class UrinalsTest {
     void readInput() {
         Urinals urinals=new Urinals();
 
-        assertEquals(true,urinals.readInput("1001001"));
+        assertTrue(urinals.readInput("1001001"));
     }
 }

@@ -1,10 +1,11 @@
 package org.example;
 
 public class Urinals {
+    String urinals;
     public boolean readInput(String input)
     {
-        System.out.println("Not  implemented");
-       return false;
+       urinals=input;
+       return true;
 
 
     }
