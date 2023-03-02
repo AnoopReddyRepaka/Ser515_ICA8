@@ -45,4 +45,5 @@ class UrinalsTest {
         Urinals urinals= new Urinals();
         assertEquals(3,urinals.validSpots("00000"));
     }
+
 }
