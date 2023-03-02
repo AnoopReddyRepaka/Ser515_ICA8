@@ -2,6 +2,8 @@ package org.example;
 
 import org.junit.jupiter.api.Test;
 import java.io.*;
+import java.nio.file.*;
+import java.util.UUID;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -79,9 +81,6 @@ class UrinalsTest {
         assertFalse(urinals.readInFile(filename));
     }
     @Test
-
-
-
         public void readIoexception() throws IOException {
             String filename = "src/main/resources/urinal.dat";
             BufferedReader reader = new BufferedReader(new FileReader(filename));
@@ -92,4 +91,21 @@ class UrinalsTest {
             }
             reader.close();
     }
+    @Test
+
+    public void FileduplicateTest()
+    {
+        Urinals urinals= new Urinals();
+        assertTrue(urinals.readInFile("src/main/resources/urinal.dat"));
+
+
+        // create a File object representing a file that does not exist
+        File nonExistingFile = new File("output/rule.txt");
+
+        // test that the file does not exist
+        assertTrue(nonExistingFile.exists());
+
+    }
+
+
 }
