@@ -31,4 +31,11 @@ class UrinalsTest {
 
         assertFalse(urinals.readInput("a0000"));
     }
+    @Test
+    void readIn_neighbor1s()
+    {
+        Urinals urinals=new Urinals();
+
+        assertFalse(urinals.readInput("01111"));
+    }
 }
