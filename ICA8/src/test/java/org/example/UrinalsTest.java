@@ -37,5 +37,12 @@ class UrinalsTest {
         Urinals urinals=new Urinals();
 
         assertFalse(urinals.readInput("01111"));
+
+    }
+    @Test
+    void ValidSpotsFirst()
+    {
+        Urinals urinals= new Urinals();
+        assertEquals(3,urinals.validSpots("00000"));
     }
 }

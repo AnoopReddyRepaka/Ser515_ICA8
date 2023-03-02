@@ -18,4 +18,9 @@ public class Urinals {
 
        return true;
     }
+
+    public int validSpots(String input)
+    {
+        return -1;
+    }
 }
