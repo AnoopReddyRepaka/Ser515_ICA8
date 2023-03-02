@@ -6,7 +6,5 @@ public class Urinals {
     {
        urinals=input;
        return true;
-
-
     }
 }

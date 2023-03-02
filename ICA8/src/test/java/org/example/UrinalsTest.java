@@ -12,4 +12,11 @@ class UrinalsTest {
 
         assertTrue(urinals.readInput("1001001"));
     }
+
+    @Test
+    void addEmptyString() {
+        Urinals urinals=new Urinals();
+
+        assertFalse(urinals.readInput(""));
+    }
 }
